@@ -14,7 +14,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="">Signup</a>
+            <a class="nav-item nav-link" href="{% url 'register' %}">Signup</a>
+            <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
 
             {% comment %} {% if request.user.form %}
             <a class="nav-item nav-link" href="{% url 'register' %}">Signup</a>
