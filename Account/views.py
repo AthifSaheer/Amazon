@@ -13,5 +13,5 @@ class RegisterView(FormView):
         email = form.cleaned_data.get('email')
         password = form.cleaned_data.get('password1')
         user = User.objects.create(username=username, email=email, password=password)
-        user.save()
+        user.save(commit=save)
         return super().form_valid(form)
